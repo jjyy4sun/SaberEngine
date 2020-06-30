@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "debugtool.h"
 #include "IApplication.hpp"
 using namespace My;
 namespace My{
@@ -6,8 +7,8 @@ namespace My{
 }
 
 int main(int argc,char **argv){
-    int ret;
-
+    int ret = 0;
+    ASSERT(0 != ret);
     if((ret = g_pApp->Initialize()) != 0){
         printf("App Initialize failed,will eixt now.");
         return ret;

@@ -1,0 +1,1 @@
+/* #undef ASSERTIONS_ENABLED */
