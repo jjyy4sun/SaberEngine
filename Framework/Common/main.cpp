@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "debugtool.h"
 #include "IApplication.hpp"
-using namespace My;
-namespace My{
+using namespace Saber;
+namespace Saber{
     extern IApplication * g_pApp;
 }
 

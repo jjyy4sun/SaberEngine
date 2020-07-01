@@ -1,6 +1,6 @@
 #include "GraphicsManager.hpp"
 
-namespace My {
+namespace Saber {
 class GraphicsManager
 {
 private:

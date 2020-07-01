@@ -1,6 +1,6 @@
 #include "BaseApplication.hpp"
 
-namespace My {
+namespace Saber {
     BaseApplication g_App;
     IApplication* g_pApp = &g_App;
 }

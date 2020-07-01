@@ -3,7 +3,7 @@
 #include "Interface.hpp"
 #include "IRuntimeModule.hpp"
 
-namespace My{
+namespace Saber{
     Interface IApplication:implements IRuntimeModule
     {
         public:

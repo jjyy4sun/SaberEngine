@@ -2,7 +2,7 @@
 
 #include "IRuntimeModule.hpp"
 
-namespace My{
+namespace Saber{
     class GraphicsManager: implements IRuntimeModule
     {
         public:

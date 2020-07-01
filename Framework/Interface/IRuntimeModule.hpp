@@ -2,7 +2,7 @@
 
 #include "Interface.hpp"
 
-namespace My{
+namespace Saber{
     Interface IRuntimeModule{
         public:
             virtual ~IRuntimeModule(){};

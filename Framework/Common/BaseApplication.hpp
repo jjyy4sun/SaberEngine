@@ -2,7 +2,7 @@
 
 #include "IApplication.hpp"
 
-namespace My{
+namespace Saber{
     class BaseApplication : implements IApplication
     {
         public:
