@@ -1,1 +1,1 @@
-/* #undef ASSERTIONS_ENABLED */
+#define ASSERTIONS_ENABLED 

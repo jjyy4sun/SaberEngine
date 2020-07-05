@@ -1,15 +1,14 @@
-#include "IRuntimeModule.hpp"
-
+#include <cstddef>
 namespace Saber{
-    class AllocatorBase:public IRuntimeModule
+    class AllocatorBase
     {
     private:
         /* data */
     public:
-        virtual AllocatorBase();
-        virtual ~AllocatorBase();
-        virtual Allocate(size_t allocate_size);
-        virtual rellocate(void* addr,size_t allocate_size);
-        virtual dellocate(void* addr);
+        AllocatorBase(){};
+        virtual ~AllocatorBase(){};
+        virtual void* Allocate(size_t allocate_size) = 0;
+        virtual int rellocate(void* addr,size_t allocate_size) = 0;
+        virtual int dellocate(void* addr) = 0;
     };    
 }
