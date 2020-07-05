@@ -1,9 +1,10 @@
 #include "BaseApplication.hpp"
-
+#include <GraphicsManager.hpp>
 //Parse command lilne ,read configuration,initialize all sub modules
 int Saber::BaseApplication::Initialize()
 {
     m_bQuit = false;
+    GraphicsManager& graph = GraphicsManager::getInstance();
     return 0;
 }
 

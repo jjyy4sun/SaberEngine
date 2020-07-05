@@ -1,10 +1,10 @@
 #pragma once
 
-#include "ISingletion.hpp"
+#include "ISingleton.hpp"
 
 
 namespace Saber{
-    class GraphicsManager: public ISingletion<GraphicsManager>
+    class GraphicsManager: public ISingleton<GraphicsManager>
     {
         public:
             int Initialize() override;
@@ -12,7 +12,7 @@ namespace Saber{
             void Tick() override;
         public:
             GraphicsManager(emu){};
-            ~GraphicsManager();
+            ~GraphicsManager(){};
             GraphicsManager(const GraphicsManager&) = delete;
             GraphicsManager &operator=(const GraphicsManager &) = delete;
     };
