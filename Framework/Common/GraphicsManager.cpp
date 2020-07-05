@@ -1,24 +1,14 @@
 #include "GraphicsManager.hpp"
 
 namespace Saber {
-class GraphicsManager
-{
-private:
-    static GraphicsManager& get() {
-        static GraphicsManager Instance;
-        return Instance;
+    int GraphicsManager::Initialize(){
+        getInstance();
+        return 0;
     }
-public:
-    GraphicsManager();
-    ~GraphicsManager();
-};
+    void GraphicsManager::Finalize() {
 
-GraphicsManager::GraphicsManager()
-{
-}
+    }
+    void GraphicsManager::Tick() {
 
-GraphicsManager::~GraphicsManager()
-{
-}
-
+    }
 }

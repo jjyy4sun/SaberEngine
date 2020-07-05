@@ -1,11 +1,19 @@
 #pragma once
 
-#include "IRuntimeModule.hpp"
+#include "ISingletion.hpp"
+
 
 namespace Saber{
-    class GraphicsManager: implements IRuntimeModule
+    class GraphicsManager: public ISingletion<GraphicsManager>
     {
         public:
-            virtual ~GraphicsManager();
+            int Initialize() override;
+            void Finalize() override;
+            void Tick() override;
+        public:
+            GraphicsManager(emu){};
+            ~GraphicsManager();
+            GraphicsManager(const GraphicsManager&) = delete;
+            GraphicsManager &operator=(const GraphicsManager &) = delete;
     };
 }
